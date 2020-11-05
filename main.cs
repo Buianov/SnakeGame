@@ -11,6 +11,12 @@ namespace Snake {
       HorizontalLine hLine2 = new HorizontalLine(1, 15, 10, '-');
       hLine2.Draw();
 
+      VerticalLine vLine1 = new VerticalLine(2, 10, 1, '|');
+      vLine1.Draw();
+
+      VerticalLine vLine2 = new VerticalLine(2, 10, 15, '|');
+      vLine2.Draw();
+
       Console.ReadLine();
     }
   }
