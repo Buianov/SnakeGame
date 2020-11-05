@@ -1,15 +1,15 @@
 using System;
+using System.Collections.Generic;
 
 namespace Snake {
   class Program {
     public static void Main (string[] args) {
       
-      Point p1 = new Point(5, 5, '$');
-      p1.Draw();
+      HorizontalLine hLine1 = new HorizontalLine(1, 15, 2, '-');
+      hLine1.Draw();
 
-      Point p2 = new Point(3, 3, '#');
-      p2.Draw();
-
+      HorizontalLine hLine2 = new HorizontalLine(1, 15, 10, '-');
+      hLine2.Draw();
 
       Console.ReadLine();
     }
