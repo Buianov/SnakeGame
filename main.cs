@@ -23,13 +23,15 @@ namespace Snake {
       Snake sn = new Snake(start, 7, Direction.RIGHT);
       sn.Draw();
 
+      while(true) {
+        if (Console.KeyAvailable) {
+          ConsoleKeyInfo key = Console.ReadKey();
+          sn.HandleKey(key.Key);
+        }
+      
       System.Threading.Thread.Sleep(300);
       sn.Move();
-      System.Threading.Thread.Sleep(300);
-      sn.Move();
-      System.Threading.Thread.Sleep(300);
-      sn.Move();
-     System.Threading.Thread.Sleep(300);
+      }
 
       Console.ReadLine();
     }
